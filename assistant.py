@@ -1,8 +1,11 @@
+from deal_negotiation import DealNegotiation
+
 class Assistant:
     def __init__(self):
-        # TODO: Initialize assistant
-        pass
+        self.deal_negotiation = DealNegotiation()
 
     def handle_task(self, task):
-        # TODO: Handle task
+        if 'negotiate' in task:
+            return self.deal_negotiation.negotiate(task)
+        # TODO: Handle other tasks
         pass
