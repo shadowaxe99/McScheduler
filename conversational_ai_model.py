@@ -3,4 +3,6 @@ class ConversationalAIModel:
         self.model_id = model_id
 
     def generate_response(self, user_input):
-        return user_input
+        # For now, the model simply echoes user input
+        # In the future, this should be replaced with a real AI model
+        return 'AI Model Response: ' + user_input
