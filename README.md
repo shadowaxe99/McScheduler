@@ -1,6 +1,6 @@
 # McScheduler
 
-McScheduler is a conversational AI project. Its primary purpose is to create an AI assistant that can interact with users, handle emails, and make automated calls. The project is now in the development phase, and many functionalities are implemented.
+McScheduler is a conversational AI project. Its primary purpose is to create an AI assistant that can interact with users, handle emails, and make automated calls. The project is now in the development phase, and many functionalities are being implemented.
 
 ## Detailed File Structure and Descriptions
 
@@ -24,6 +24,42 @@ The project is composed of several Python files, each serving a specific purpose
 
 - utils.py: This file is intended to hold utility functions that can be used across the project. It's currently a placeholder file.
 
+- customization_options.py: This file contains the customization options for the AI assistant.
+
+- deal_negotiation.py: This file contains the deal negotiation logic for the AI assistant.
+
+- dietary_accommodation_tracking.py: This file contains the dietary accommodation tracking logic for the AI assistant.
+
+- email_integration.py: This file contains the email integration logic for the AI assistant.
+
+- event_reminders.py: This file contains the event reminders logic for the AI assistant.
+
+- follow_up_management.py: This file contains the follow up management logic for the AI assistant.
+
+- food_ordering_integration.py: This file contains the food ordering integration logic for the AI assistant.
+
+- food_recommendations.py: This file contains the food recommendations logic for the AI assistant.
+
+- group_meal_coordination.py: This file contains the group meal coordination logic for the AI assistant.
+
+- interactive_cooking_workshops.py: This file contains the interactive cooking workshops logic for the AI assistant.
+
+- meal_time_integration.py: This file contains the meal time integration logic for the AI assistant.
+
+- natural_language_processing.py: This file contains the natural language processing logic for the AI assistant.
+
+- openai_integration.py: This file contains the OpenAI integration logic for the AI assistant.
+
+- smart_menu_suggestions.py: This file contains the smart menu suggestions logic for the AI assistant.
+
+- timezone_management.py: This file contains the timezone management logic for the AI assistant.
+
+- virtual_food_experiences.py: This file contains the virtual food experiences logic for the AI assistant.
+
+- virtual_tasting_sessions.py: This file contains the virtual tasting sessions logic for the AI assistant.
+
+- whisper_api_integration.py: This file contains the Whisper API integration logic for the AI assistant.
+
 ## Detailed Instructions on How to Run the Application
 
 In its current state, you can interact with the application by running the main.py script and typing input into the console. Here's how you can do this:
@@ -35,7 +71,7 @@ In its current state, you can interact with the application by running the main.
 
 ## Future Work and Contributions
 
-As this project is still in the early stages, there's a lot of room for development and improvement. Here are a few areas where contributions would be particularly useful:
+As this project is now in the development stages, there's a lot of room for development and improvement. Here are a few areas where contributions would be particularly useful:
 
 - Implement the ConversationalAIModel using a real AI model, such as OpenAI's GPT-3.
 - Develop the EmailHandlingSupport class to send and read emails using libraries like smtplib, imaplib, or poplib.
