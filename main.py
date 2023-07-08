@@ -11,21 +11,25 @@ ai_support = ConversationalAISupport(ai_model)
 def home():
     return 'Hello, World!'
 
-@app.route('/new_endpoint')
-def new_endpoint():
-    return flask.jsonify(message='This is a new endpoint')
+@app.route('/orders', methods=['GET'])
+def list_orders():
+    return 'List of orders'
 
-@app.route('/task1')
-def task1():
-    return flask.jsonify(message='Task 1 endpoint')
+@app.route('/orders', methods=['POST'])
+def place_order():
+    return 'Place a new order'
 
-@app.route('/task2')
-def task2():
-    return flask.jsonify(message='Task 2 endpoint')
+@app.route('/orders/<int:order_id>', methods=['GET'])
+def get_order(order_id):
+    return f'Get details for order #{order_id}'
 
-@app.route('/task3')
-def task3():
-    return flask.jsonify(message='Task 3 endpoint')
+@app.route('/orders/<int:order_id>', methods=['PUT'])
+def update_order(order_id):
+    return f'Update order #{order_id}'
+
+@app.route('/orders/<int:order_id>', methods=['DELETE'])
+def cancel_order(order_id):
+    return f'Cancel order #{order_id}'
 
 if __name__ == '__main__':
     app.run(port=5001)
