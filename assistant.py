@@ -32,5 +32,8 @@ class Assistant:
             email_response = self.email_support.send_email(email['to'], email['subject'], email['body'])
             call_response = self.call_support.make_call(call['number'], call['message'])
             return email_response + '\n' + call_response
+        elif task['type'] == 'advanced_conversation':
+            # TODO: Implement advanced conversation functionality
+            pass
         else:
             return 'Unknown task type'
