@@ -1,6 +1,6 @@
 # McScheduler
 
-McScheduler is a conversational AI project. Its primary purpose is to create an AI assistant that can interact with users, handle emails, and make automated calls. The project is still in the early development phase, and many functionalities are represented by placeholders or pseudocode.
+McScheduler is a conversational AI project. Its primary purpose is to create an AI assistant that can interact with users, handle emails, and make automated calls. The project is now in the development phase, and many functionalities are being implemented.
 
 ## Detailed File Structure and Descriptions
 
@@ -35,7 +35,7 @@ In its current state, you can interact with the application by running the main.
 
 ## Future Work and Contributions
 
-As this project is still in the early stages, there's a lot of room for development and improvement. Here are a few areas where contributions would be particularly useful:
+As this project is now in the development stages, there's a lot of room for development and improvement. Here are a few areas where contributions would be particularly useful:
 
 - Implement the ConversationalAIModel using a real AI model, such as OpenAI's GPT-3.
 - Develop the EmailHandlingSupport class to send and read emails using libraries like smtplib, imaplib, or poplib.
