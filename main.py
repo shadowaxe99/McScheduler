@@ -8,8 +8,8 @@ from agent import Agent
 def main():
     ai_model = ConversationalAIModel('gpt-3.5-turbo')
     ai_support = ConversationalAISupport(ai_model)
-    email_support = EmailHandlingSupport()
-    call_support = AutomatedCallsSupport()
+    email_support = EmailHandlingSupport('your_email@gmail.com', 'your_password')  # Replace with your email and password
+    call_support = AutomatedCallsSupport('your_account_sid', 'your_auth_token')  # Replace with your Twilio account SID and auth token
     assistant = Assistant(ai_support, email_support, call_support)
     agent = Agent(assistant)
 
