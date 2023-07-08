@@ -15,5 +15,17 @@ def home():
 def new_endpoint():
     return flask.jsonify(message='This is a new endpoint')
 
+@app.route('/task1')
+def task1():
+    return flask.jsonify(message='Task 1 endpoint')
+
+@app.route('/task2')
+def task2():
+    return flask.jsonify(message='Task 2 endpoint')
+
+@app.route('/task3')
+def task3():
+    return flask.jsonify(message='Task 3 endpoint')
+
 if __name__ == '__main__':
     app.run(port=5001)
