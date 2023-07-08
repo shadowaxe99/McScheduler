@@ -13,7 +13,7 @@ def home():
 
 @app.route('/new_endpoint')
 def new_endpoint():
-    return 'This is a new endpoint'
+    return flask.jsonify(message='This is a new endpoint')
 
 if __name__ == '__main__':
     app.run(port=5001)
