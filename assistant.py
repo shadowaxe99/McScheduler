@@ -21,5 +21,7 @@ class Assistant:
         elif task['type'] == 'voice':
             text = self.voice_support.speech_to_text()
             return self.ai_support.handle_user_input(text)
+        elif task['type'] == 'text_to_speech':
+            return self.voice_support.text_to_speech(task['text'])
         else:
             return 'Unknown task type'
