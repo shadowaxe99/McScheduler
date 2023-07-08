@@ -23,5 +23,8 @@ class Assistant:
             return self.ai_support.handle_user_input(text)
         elif task['type'] == 'text_to_speech':
             return self.voice_support.text_to_speech(task['text'])
+        elif task['type'] == 'email_to_speech':
+            email = self.utils.parse_email(task['email'])
+            return self.voice_support.text_to_speech(email['body'])
         else:
             return 'Unknown task type'
