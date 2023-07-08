@@ -9,9 +9,11 @@ ai_support = ConversationalAISupport(ai_model)
 
 @app.route('/')
 def home():
-    user_input = input('Enter your input: ')
-    response = ai_support.generate_response(user_input)
-    return response
+    return 'Hello, World!'
+
+@app.route('/new_endpoint')
+def new_endpoint():
+    return 'This is a new endpoint'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001)
