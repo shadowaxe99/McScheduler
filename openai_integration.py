@@ -2,7 +2,7 @@ import openai
 
 # Function to authenticate with OpenAI API
 def authenticate():
-    openai.api_key = 'your-api-key'
+    openai.api_key = 'your-real-api-key'
 
 # Function to generate response using OpenAI GPT-3
 def generate_response(prompt):
